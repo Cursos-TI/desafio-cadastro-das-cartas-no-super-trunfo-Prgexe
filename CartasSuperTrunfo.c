@@ -13,6 +13,7 @@ int main() {
     int Pontos;
     char Codigo;
 
+    printf("*** Projeto Cartas Super Trunfos ***\n");
     printf("Código da cidade\n");
     scanf("%s", &Codigo);
     printf("Número da população\n");
@@ -27,6 +28,17 @@ int main() {
     printf("Pontos\n");
     scanf(" %d", &Pontos);
     printf("Pontos: %d\n", Pontos);
+
+    float densidade;
+    densidade = (float)Populacao / Area;
+    printf("A densidade populacional é: %.2f\n", densidade);
+
+    float pib;
+    pib = (float)PIB / Populacao;
+    printf("O PIB Per Capita é: %.2f\n", pib);
+
+
+
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
